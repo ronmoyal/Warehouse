@@ -1,0 +1,529 @@
+body {
+  margin: 0;
+  background: linear-gradient(
+    to left,
+    rgba(7, 27, 82, 1) 0%,
+    rgba(0, 128, 128, 1) 100%
+  );
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+header {
+  z-index: 1;
+}
+
+.site-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  margin: 50px;
+}
+main {
+  flex: 1;
+}
+
+
+.navbar-container {
+  font-weight: bold;
+  transition: font-size 0.5s ease;
+  height: 5px;
+}
+
+.brand:hover {
+  transform: scale(1.1);
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product {
+  border: 1px rgb(35, 35, 48) solid;
+  margin: 1rem;
+}
+
+.product-info {
+  padding: 1rem;
+}
+.small-container {
+  max-width: 600px;
+}
+
+.form-container {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ddd;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #ddd;
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  background-color: #3498db;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+.product-image {
+  height: 300px;
+  max-width: 300px;
+}
+
+/* /Signup/ */
+.signup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+}
+
+.signup-form-container {
+  max-width: 400px;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px #ddd;
+}
+
+.signup-form-group {
+  margin-bottom: 20px;
+}
+
+.signup-lable {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.signup-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.signup-submit[type='submit'] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.signup-submit[type='submit']:hover {
+  background-color: #0069d9;
+}
+
+/* /Signin/ */
+.signin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+}
+
+.signin-form-container {
+  max-width: 400px;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px #ddd;
+}
+
+.signin-form-group {
+  margin-bottom: 20px;
+}
+
+.signin-lable {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.signin-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.signin-submit[type='submit'] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.signin-submit[type='submit']:hover {
+  background-color: #0069d9;
+}
+
+/* homepage */
+
+.homeTitlePodcast {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ProductsTitle {
+  margin: 0;
+}
+
+.inviteButton {
+  padding: 4px 8px;
+  width: 200px;
+  font-size: 14px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.product-card .card-body a {
+  text-decoration: none;
+}
+
+/* order: */
+
+.myOrderTitle {
+  margin-top: 100px;
+}
+
+.order-form-container {
+  background-color: rgba(7, 27, 82, 1) 0%,
+  rgba(0, 128, 128, 1) 100%;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 500px;
+  margin: 0 auto;
+  margin-top: 50px;
+  position: relative;
+}
+
+.order-form-container1{
+  position: relative;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 500px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+
+.order-submit[type='submit'] {
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.rdrStaticRangeLabel {
+  color: black;
+}
+
+/* room users */
+.room-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.room-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.room-item h3 {
+  margin-top: 0;
+}
+
+.room-item p {
+  margin: 0;
+}
+
+/*   Hackathon - user story 6  */
+.select-black select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  color: black;
+}
+
+.select-black option {
+  color: black;
+}
+
+
+/* order users */
+.order-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.order-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.order-item h3 {
+  margin-top: 0;
+}
+
+.order-item p {
+  margin: 0;
+}
+
+.date-and-select-container1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.date-and-select-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.roomLoanDate{
+  color: white;
+  background: linear-gradient(
+    to right,
+    rgba(7, 27, 82, 1) 0%,
+    rgba(0, 128, 128, 1) 100%
+  );
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+.groupInvite {
+  color: white;
+  background: linear-gradient(
+    to right,
+    rgba(7, 27, 82, 1) 0%,
+    rgba(0, 128, 128, 1) 100%
+  );
+  height: auto;
+  min-height: 150px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  
+}
+
+
+
+.multipleInvite {
+  color: #fff;
+  font-size: 20px;
+  padding: 0px;
+}
+
+
+#startTime{
+  background: rgba(0, 128, 128, 1) 100%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#endTime{
+  background: rgba(0, 128, 128, 1) 100%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#startTime option,
+#endTime option {
+  background-color: white;
+  color: black;
+}
+
+/* Problem  */
+.button-complete {
+  background-color: rgb(0, 43, 99);
+}
+.button-complete:hover {
+  background-color: rgb(0, 43, 99);
+}
+
+/* LatePolicy*/
+.latePolicyContainer {
+  background-color: #f5f5f5;
+  border-radius: 50px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 80%;
+  margin: 100px;
+}
+
+.teacherPolicy {
+  background-color: #f1f1f1;
+}
+
+.latePolicyTitle {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.latePolicyContainer p {
+  color: #333;
+}
+
+.highlight {
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.highlight p {
+  color: #555;
+}
+
+.highlight p:first-child {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Statistics */
+.container {
+  margin: 20px;
+}
+
+.statisticsContainer {
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.statisticsTitle {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.tableTitle {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+
+}
+
+thead {
+  background-color: #333;
+  color: #fff;
+}
+
+th,
+td {
+  padding: 10px;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+  background-color: #e6e6e6;
+  transition: background-color 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .table {
+    font-size: 14px;
+  }
+}
+
+.statisticsContainer > table {
+  margin-bottom: 40px;
+}
+
+/* Hackathon - user story 9  */
+.Toastify__toast-container {
+  z-index: 9999;
+  position: fixed;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  margin-top: 100px;
+}
